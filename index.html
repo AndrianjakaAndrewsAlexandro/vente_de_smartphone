@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextCell (Vente de smartphone)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont/tabler-icons.min.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <header>
+        <h1><span class="next">Next</span><span class="cell">Cell</span><span class="store">STORE</span></h1>
+        <nav>
+            <ul>
+                <li class="acceuil"><a href="index.html">Acceuil</a></li>
+                <li class="smartphone"><a href="smartphone.html" >Catalogue</a></li>
+                <li class="apropos"><a href="apropos.html" class="apropos">À propos</a></li>
+                <li class="contact"><a href="contact.html" class="contact">Contact</a></li>
+                <li class="fiche_produit"><a href="fiche_produit.html" class="fiche_produit">Produits</a></li>
+            </ul>
+            <i class="ti ti-toggle-right" id="light_mode"></i>
+            <i class="ti ti-toggle-left" id="night_mode"></i>
+        </nav>
+        <ul class="icons">
+            <li><a href="fiche_produit.html"><i class="ti ti-search"></i></a></li>
+            <li><a href="inscription_connexion.html"><i class="ti ti-user"></i></a></li>
+        </ul>
+        <ul id="menu_cache">
+            <li class="acceuil_cache"><a href="index.html"><i class="ti ti-home"></i> Acceuil</a></li>
+            <li class="smartphone_cache"><a href="smartphone.html" ><i class="ti ti-device-mobile"></i> Catalogue</a></li>
+            <li class="apropos_cache"><a href="apropos.html"><i class="ti ti-info-circle"></i> À propos</a></li>
+            <li class="contact_cache"><a href="contact.html"><i class="ti ti-mail"></i> Contact</a></li>
+            <li class="fiche_produit_cache"><a href="fiche_produit.html"><i class="ti ti-shopping-cart"></i></i> Produits</a></li>
+            <li class="separation"></li>
+            <li class="rechercher_cache"><a href="fiche_produit.html"><i class="ti ti-search"></i> Rechercher</a></li>
+            <li class="connexion_cache"><a href="inscription/connexion.html"><i class="ti ti-user"></i> Connexion</a></li>
+        </ul>
+        <i class="ti ti-menu-2" id="hamburger"></i>
+    </header>
+    <section class="section1" id="acceuil">
+        <div>
+            <span class="bienvenue">BIENVENUE</span>
+            <p class="slogan">Votre prochain smartphone <br> <span>commence ici.</span></p>
+            <p class="invitation">Explorez notre collection des smartphones des <br> meilleurs marques.</p>
+            <p class="invitation2"><a href="#">Voir la collection <i class="ti ti-arrow-narrow-right"></i></a><i id="logo_garantie" class="ti ti-shield-check"></i>Qualité garantie</p>
+            <div class="nombres">
+                <p><span>500+</span> <br>Smartphones</p>
+                <p><span>50+</span> <br>Marques</p>
+                <p><span>100+</span> <br>Clients satisfaits</p>
+            </div>
+        </div>
+        <aside class="phone_demo">
+            <p class="nouveau">NOUVEAU</p>
+            <div class="info_center">
+                <p class="iphone">iPhone 15 pro</p>
+                <p class="iphone_prix">2 999 000 Ar</p>
+                <p class="voir_produit"><a href="smartphone.html">Voir le produit</a></p>
+            </div>
+            <p class="livraison">Livraison <br><span>Rapide</span></p>
+        </aside>
+    </section>
+    <section class="section2">
+        <p class="marques_titre">Nos marques partenaires</p>
+        <div class="marques_carousel">
+            <button class="fleche" id="fleche_gauche" type="button">&#8249;</button>
+            <div class="marques_container" id="marques_container">
+                <div class="marques_items">
+                    <div class="marques_logo"><img src="Logo_marques/apple_logo.png" alt="ogo apple"></div>
+                    <p class="marques_nom">Apple</p>
+                </div>
+                <div class="marques_items">
+                    <div class="marques_logo"><img src="Logo_marques/samsung_logo.png" alt="logo samsung"></div>
+                    <p class="marques_nom">Samsung</p>
+                </div>
+                <div class="marques_items">
+                    <div class="marques_logo"><img src="Logo_marques/xiaomi_logo.png" alt="logo xiaomi">
+                    </div>
+                    <p class="marques_nom">Xiaomi</p>
+                </div>
+                <div class="marques_items">
+                    <div class="marques_logo"><img src="Logo_marques/oppo_logo.png" alt="logo oppo"></div>
+                    <p class="marques_nom">Oppo</p>
+                </div>
+                <div class="marques_items">
+                    <div class="marques_logo"><img src="Logo_marques/realme_logo.png" alt="logo realme"></div>
+                    <p class="marques_nom">Realme</p>
+                </div>
+                <div class="marques_items">
+                    <div class="marques_logo"><img src="Logo_marques/oneplus_logo.png" alt="logo oneplus"></div>
+                    <p class="marques_nom">Oneplus</p>
+                </div>
+                <div class="marques_items">
+                    <div class="marques_logo"><img src="Logo_marques/huawei_logo.jpg" alt="logo huawei"></div>
+                    <p class="marques_nom">Huawei</p>
+                </div>
+            </div>
+            <button class="fleche" id="fleche_droite" type="button">&#8250;</button>
+        </div>
+    </section>
+    <section class="section3">
+        <p class="titre_produits_populaires">Produits <span>Populaires</span></p>
+        <div class="produits_populaires_container">
+            <div class="produits_populaires_items">
+                <p class="best_seller">BEST SELLER</p>
+                <div class="phone_populaire">
+                    <img src="Smartphone_images/iphone 15 pro.avif" alt="iphon 15 pro photo">
+                </div>
+                <p class="nom_produits_populaires">iphone 15 pro</p>
+                <p class="marques_produits_populaires">Apple</p>
+                <p class="prix_produits_populaires">2 999 000 Ar</p>
+                <p class="acheter_produits_populaires">Acheter</p>
+            </div>
+            <div class="produits_populaires_items">
+                <p class="nouveau_produits_populaires">NOUVEAU</p>
+                <div class="phone_populaire">
+                    <img src="Smartphone_images/samsung-galaxy-s24-ultra-5g-sm-s928-0.jpg" alt="">
+                </div>
+                <p class="nom_produits_populaires">Samsung S24</p>
+                <p class="marques_produits_populaires">Samsung</p>
+                <p class="prix_produits_populaires">2 499 000 Ar</p>
+                <p class="acheter_produits_populaires">Acheter</p>
+            </div>
+            <div class="produits_populaires_items">
+                <div class="phone_populaire">
+                    <img src="Smartphone_images/Xiaomi 17 pro max 2.jpeg" alt="">
+                </div>
+                <p class="nom_produits_populaires">Xiaomi 17 pro max</p>
+                <p class="marques_produits_populaires">Xiaomi</p>
+                <p class="prix_produits_populaires">1 799 000 Ar</p>
+                <p class="acheter_produits_populaires">Acheter</p>
+            </div>
+            <div class="produits_populaires_items">
+                <div class="phone_populaire">
+                    <img src="Smartphone_images/Oppo finX7.jpeg" alt="">
+                </div>
+                <p class="nom_produits_populaires">Oppo FindX7</p>
+                <p class="marques_produits_populaires">Oppo</p>
+                <p class="prix_produits_populaires">1 999 000 Ar</p>
+                <p class="acheter_produits_populaires">Acheter</p>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <p class="pourquoi_nextcell">Pourquoi choisir <span>NextCell ?</span></p>
+        <p class="rend_different">Ce qui nous rend différent</p>
+        <div class="container_choisir_nextcell">
+            <div class="choisir_nextcell_items">
+                <p class="dessin">🚚</p>
+                <p class="atout">Livraison rapide</p>
+                <p class="atout_remarque">Recevez votre commmade en 24h</p>
+            </div>
+            <div class="choisir_nextcell_items">
+                <p class="dessin">🛡️</p>
+                <p class="atout">Qualité garantie</p>
+                <p class="atout_remarque">Produits 100% authentiques</p>
+            </div>
+            <div class="choisir_nextcell_items">
+                <p class="dessin">💰 </p>
+                <p class="atout">Meilleurs prix</p>
+                <p class="atout_remarque">Prix imbattables garantis</p>
+            </div>
+            <div class="choisir_nextcell_items">
+                <p class="dessin">🎧</p>
+                <p class="atout">SAV 24/7</p>
+                <p class="atout_remarque">Support client disponible</p>
+            </div>
+        </div>
+    </section>
+    <section class="section5">
+        <p class="clients_disent">Ce que disent nos <span>Clients</span></p>
+        <div class="container_clients_disent">
+            <div class="clients_disent_items">
+                <p class="premier_lettre_nom_client_1">R</p>
+                <p></p>
+                <p class="comentaire_client">"Livraison rapide, produit authentiques!"</p>
+                <p class="nom_client">Ravo</p>
+            </div>
+            <div class="clients_disent_items">
+                <p class="premier_lettre_nom_client_2"><span>H</span></p>
+                <p></p>
+                <p class="comentaire_client">"Meilleurs prix, je recommande NextCell!"</p>
+                <p class="nom_client">Haja</p>
+            </div>
+            <div class="clients_disent_items">
+                <p class="premier_lettre_nom_client_3"><span>F</span></p>
+                <p></p>
+                <p class="comentaire_client">"Service client très réactif et professionnel!"</p>
+                <p class="nom_client">Fara</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container_footer">
+            <div class="footer_items">
+                <h1><span class="next">Next</span><span class="cell">Cell</span></h1>
+                <p>Votre boutique de smartphone de confiance à Madagascar</p>
+            </div>
+            <div class="footer_items">
+                <p class="sous_titre_footer">Navigation</p>
+                <ul>
+                    <li><a href="#acceuil">Acceuil</a></li>
+                    <li><a href="smartphone.html">Smartphone</a></li>
+                    <li><a href="apropos.html"> A propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+            </div>
+            <div class="footer_items">
+                <p class="sous_titre_footer">Contact</p>
+                <ul>
+                    <li><i class="ti ti-map-pin"></i> Antananarivo</li>
+                    <li><i class="ti ti-phone"></i> +261 34 00 000 00</li>
+                    <li><i class="ti ti-mail"></i> contact@nextcell.mg</li>
+                </ul>
+            </div>
+            <div class="footer_items">
+                <p class="sous_titre_footer">Suivez-nous</p>
+                <div class="social">
+                    <i class="ti ti-brand-facebook"></i>
+                    <i class="ti ti-brand-linkedin"></i>
+                    <i class="ti ti-player-play"></i>
+                </div>
+            </div>
+        </div>
+        <p class="droits_reserve">© 2026 NextCell. Tous droits réservés</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextCell (Vente de smartphone)</title>
+    <link rel="stylesheet" href="inscription_connexion.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont/tabler-icons.min.css">
+
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <header>
+        <h1><span class="next">Next</span><span class="cell">Cell</span><span class="store">STORE</span></h1>
+        <nav>
+            <ul>
+                <li class="acceuil"><a href="index.html">Acceuil</a></li>
+                <li class="smartphone"><a href="smartphone.html" >Catalogue</a></li>
+                <li class="apropos"><a href="apropos.html" class="apropos">À propos</a></li>
+                <li class="contact"><a href="contact.html" class="contact">Contact</a></li>
+                <li class="fiche_produit"><a href="fiche_produit.html" class="fiche_produit">Produits</a></li>
+            </ul>
+            <i class="ti ti-toggle-right" id="light_mode"></i>
+            <i class="ti ti-toggle-left" id="night_mode"></i>
+        </nav>
+        <ul class="icons">
+            <li><a href="fiche_produit.html"><i class="ti ti-search"></i></a></li>
+            <li><a href="inscription_connexion.html"><i class="ti ti-user"></i></a></li>
+        </ul>
+        <ul id="menu_cache">
+            <li class="acceuil_cache"><a href="index.html"><i class="ti ti-home"></i> Acceuil</a></li>
+            <li class="smartphone_cache"><a href="smartphone.html" ><i class="ti ti-device-mobile"></i> Catalogue</a></li>
+            <li class="apropos_cache"><a href="apropos.html"><i class="ti ti-info-circle"></i> À propos</a></li>
+            <li class="contact_cache"><a href="contact.html"><i class="ti ti-mail"></i> Contact</a></li>
+            <li class="fiche_produit_cache"><a href="fiche_produit.html"><i class="ti ti-shopping-cart"></i></i> Produits</a></li>
+            <li class="separation"></li>
+            <li class="rechercher_cache"><a href="fiche_produit.html"><i class="ti ti-search"></i> Rechercher</a></li>
+            <li class="connexion_cache"><a href="inscription_connexion.html"><i class="ti ti-user"></i> Connexion</a></li>
+        </ul>
+        <i class="ti ti-menu-2" id="hamburger"></i>
+    </header>
+    <main>
+        <form action="form" id="connexion">
+            <fieldset class="inscription_form">
+                <legend class="titre_inscription">Connexion</legend>
+                
+                <label for="user_name" class="titre">Nom d'utilisateur</label><br>
+                <input type="text" id="user_name"><br><br>
+
+                <label for="password" class="titre">Mot de passe:</label><br>
+                <input type="password" id="password"><br><br>
+
+                <div class="boite_div">
+                    <input type="submit" value="Se connecter" class="boite">
+                    <input type="reset"value="Effacer" class="boite">
+                </div>
+            </fieldset>
+        </form>
+
+        <form action="form" id="inscription">
+            <fieldset class="inscription_form">
+                <legend class="titre_inscription">Inscription</legend>
+                <label for="name" class="titre">Nom:</label><br>
+                <input type="text" id="name"><br><br>
+
+                <label for="firstname" class="titre">Prénom:</label><br>
+                <input type="text" id="firstname"><br><br>
+
+                <label for="email" class="titre">Email:</label><br>
+                <input type="email" id="email"><br><br>
+                
+                <label for="user_name_inscription" class="titre">Nom d'utilisateur</label><br>
+                <input type="text" id="user_name_inscription" required><br><br>
+
+                <label for="password_inscription" class="titre">Mot de passe:</label><br>
+                <input type="password" id="password_inscription" required><br><br>
+
+                <div class="boite_div">
+                    <input type="button" value="S'inscrire" class="boite" id="inscrire">
+                    <input type="reset"value="Effacer" class="boite">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="container_footer">
+            <div class="footer_items">
+                <h1><span class="next">Next</span><span class="cell">Cell</span></h1>
+                <p>Votre boutique de smartphone de confiance à Madagascar</p>
+            </div>
+            <div class="footer_items">
+                <p class="sous_titre_footer">Navigation</p>
+                <ul>
+                    <li><a href="#acceuil">Acceuil</a></li>
+                    <li><a href="smartphone.html">Smartphone</a></li>
+                    <li><a href="apropos.html"> A propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+            </div>
+            <div class="footer_items">
+                <p class="sous_titre_footer">Contact</p>
+                <ul>
+                    <li><i class="ti ti-map-pin"></i> Antananarivo</li>
+                    <li><i class="ti ti-phone"></i> +261 34 00 000 00</li>
+                    <li><i class="ti ti-mail"></i> contact@nextcell.mg</li>
+                </ul>
+            </div>
+            <div class="footer_items">
+                <p class="sous_titre_footer">Suivez-nous</p>
+                <div class="social">
+                    <i class="ti ti-brand-facebook"></i>
+                    <i class="ti ti-brand-linkedin"></i>
+                    <i class="ti ti-player-play"></i>
+                </div>
+            </div>
+        </div>
+        <p class="droits_reserve">© 2026 NextCell. Tous droits réservés</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

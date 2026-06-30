@@ -1,0 +1,972 @@
+:root{
+    /*------------ Mode sombre -----------*/
+    --fond-principal-night: #0A0A0A;
+    --fond-secondaire-night: #1A1A2E;
+    --accent-principal-night: #2563EB;
+    --accent-hover-night: #3B82F6;
+    --text-principal-night: #FFFFFF;
+    --text-secondaire-night: #A0A0A0;
+
+    /*------------ Mode clair ------------*/
+    --fond-principal-light: #FFFFFF;
+    --fond-secondaire-light: #F1F5F9;
+    --accent-principal-light: #2563EB;
+    --accent-hover-light: #1D4ED8;
+    --text-principal-light: #0A0A0A;
+    --text-secondaire-light: #4B5563;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html{
+    border: #F00 2px solid;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    background-color: var(--fond-principal-night);
+    border: 2px solid blue;
+    width: 100fr;
+    height: 100%;
+}
+
+.ti-toggle-right{
+    color: var(--accent-principal-night);
+    font-size: 30px;
+    margin: 6px;
+}
+
+.ti-toggle-left{
+    display: none;
+    color: var(--accent-principal-night);
+    font-size: 30px;
+    margin: 6px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    border-bottom: var(--fond-secondaire-night) 1px solid;
+    padding-block: 20px;
+    padding-inline: 40px;
+    z-index: 119;
+}
+
+.next{
+    color: var(--accent-principal-night);
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+.cell{
+    color: var(--text-principal-night);
+    font-weight: 100;
+    font-size: 2vw;
+}
+
+.store{
+    color: var(--text-principal-night);
+    font-size: 10px;
+    font-weight: 100;
+    background-color: var(--accent-principal-light);
+    border: 1px solid var(--accent-principal-light);
+    border-radius: 16px;
+    padding: 5px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: var(--fond-secondaire-night);
+    border: var(--fond-secondaire-night) 1px solid;
+    border-radius: 2.5vw;
+    padding: 1.0vw;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 1.0vw;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style-type: none;  
+    border: var(--fond-secondaire-night) solid 1px;
+    border-radius: 25px;
+    padding-inline: 1.2vw;
+    padding-block: 0.7vw;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(0.9vw + 6px);
+}
+
+nav ul li:hover{
+    background-color: var(--accent-hover-night);
+}
+
+.acceuil{
+    background-color: var(--accent-principal-night);
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-principal-night);
+    text-decoration: none;
+    font-weight: 600;  
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.0vw;
+    font-size: calc(0.9vw + 16px);
+}
+
+#hamburger{
+    display: none;
+    color: var(--text-principal-night);
+    font-size: 40px;
+}
+
+
+#menu_cache{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 70%;
+    font-size: 15px;
+    right: -100%;
+    top: 10px;
+    z-index: 2;
+    border-left: 2px solid var(--accent-principal-night);
+    background-color: var(--fond-secondaire-night);
+    padding: 24px;
+    z-index: 99;
+}
+
+#menu_cache li{
+    list-style-type: none;
+}
+
+#menu_cache li {
+    font-size: 20px;
+    border: 1px solid var(--text-secondaire-light);
+    padding-left: 20px;
+    padding-block: 20px;
+    border-radius: 8px;
+    text-align: left;
+    color: var(--text-secondaire-night);
+}
+
+#menu_cache li i{
+    margin-right: 8px;
+}
+
+
+#menu_cache .separation{
+    border-inline: none;
+    border-top: none;
+}
+
+#menu_cache .acceuil_cache{
+    background-color: var(--accent-principal-night);
+    color: var(--text-principal-night);
+
+}
+
+#menu_cache .connexion_cache{
+    color: var(--text-principal-night);
+    background-color: var(--fond-principal-night);
+    border: 2px solid var(--accent-hover-light);
+}
+
+#overlay{
+    display: none;
+    z-index: 98;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+} 
+
+#overlay.active{
+    display: block;
+}
+
+#menu_cache.ouvert{
+    right: 0px;
+}
+
+/*-------   Première section   ---------*/
+.section1{
+    padding-inline: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bienvenue{
+    background-color: var(--fond-secondaire-night);
+    color: var(--accent-principal-night);
+    font-size: 18px;
+    border: 2px solid var(--accent-principal-night);
+    border-radius: 25px;
+    padding-block: 6px;
+    padding-inline: 10px;
+    letter-spacing: 3px;
+}
+
+.slogan{
+    font-weight: 548;
+    margin-top: 30px;
+    font-size: 44px;
+    color: var( --text-principal-night);
+}
+
+.slogan span{
+    color: var(--accent-principal-night);
+}
+/*La phrase: "Explorez notre collection des smartphones des meilleurs marques."*/
+.invitation{
+    margin-top: 30px;
+    color: var(--text-secondaire-night);
+    font-size: 22px;
+}
+
+/*Le lien pour voir les produits et qualité garantie*/
+.invitation2{
+    margin-top: 40px;
+    color: var(--text-secondaire-night);
+}
+
+.invitation2 a{
+    text-decoration: none;
+    background-color: var(--accent-hover-night);
+    color: var(--text-principal-night);
+    border: 1px solid var(--accent-hover-night);
+    border-radius: 16px;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+/*logo garantie*/
+#logo_garantie{
+    color: var(--accent-principal-night);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/*nombres de smartphons, marques, clients satisfait*/
+.nombres{
+    margin-top: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    border-inline: 2px solid var(--text-secondaire-night);
+}
+.nombres p{
+    border-right: var(--text-secondaire-night);
+    color: var(--text-secondaire-night);
+}
+.nombres span{
+    color: var(--text-principal-night);
+}
+
+/*-------Ladémonstrationde l'iphone 15 pro    ----------*/
+.phone_demo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    border: var(--accent-principal-night) 3px solid;
+    border-radius: 20px;
+    position: relative;
+    background-color: var(--fond-secondaire-night);
+}
+
+.nouveau{
+    background-color: var(--accent-hover-night);
+    color: var(--text-principal-night);
+    border: 1px solid var(--accent-hover-night);
+    border: 1px solid var(--accent-hover-night);
+    border-radius: 6px;
+    padding: 6px;
+    position: absolute;
+    font-size: 12px;
+    top: -15px;
+    right: -20px;
+}
+
+.voir_produit{
+    display: inline;
+    background-color: var(--accent-hover-night);
+    color: var(--text-principal-night);
+    border: 1px solid var(--accent-hover-night);
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.voir_produit a{
+    text-decoration: none;
+}
+
+/*-------           info sur le prix de l'iphone 15 pro dans l'acceuil     --------*/
+.info_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    height: 100px;
+    font-size: 15px;
+}
+
+.iphone{
+    color: var(--text-secondaire-night);
+}
+
+.iphone_prix{
+    color: var(--text-principal-night);
+}
+
+.livraison{
+    color: var(--text-secondaire-night);
+    position: absolute;
+    left: -30px;
+    bottom: 22px;
+    background-color: var(--fond-secondaire-night);
+    border: 2px solid var(--accent-hover-night);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.livraison span{
+    color: var(--text-principal-night);
+}
+
+
+
+
+/*-------   Deuxième section    --------*/
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.marques_titre{
+    color: var(--text-principal-night);
+    font-size: 40px;
+    border-bottom: solid 3px var(--accent-principal-night);
+}
+
+.marques_carousel{
+    position: relative;
+    height: 100%;
+    overflow-x: auto;
+    margin-inline: auto;
+    width: 100%;
+    border: var(--fond-principal-night) solid 2px;
+    padding-inline: 2px;
+    padding-block: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform O.4s ease;
+}
+
+.marques_carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.marques_carousel{
+    overflow: hidden;
+}
+
+.fleche{
+    position: absolute;
+    z-index: 2;
+    background-color: var(--fond-principal-night);
+    color: var(--accent-principal-night);
+    padding: 10px;
+    border: 1px solid var(--fond-principal-night);
+    border-radius: 8px;
+    font-size: 25px; 
+}
+
+#fleche_gauche{
+    position: absolute;
+    left: 10px;
+    bottom: 50%; 
+}
+
+#fleche_droite{
+    position: absolute;
+    right: 10px;
+    bottom: 50%;
+    size: 80px;
+}
+
+.marques_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+}
+
+.marques_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.marques_logo{
+    border: 4px solid var(--accent-principal-night);
+    overflow: hidden; 
+    object-fit: cover;
+    width: 155px;
+    height: 155px;
+    border-radius: 24px;
+}
+
+.marques_logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.marques_nom{
+    color: var(--text-principal-night);
+    text-align: center;
+    font-size: 20px;
+}
+
+/*-------   Troisième section    --------*/
+.section3{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.titre_produits_populaires{
+    color: var(--text-principal-night);
+    font-size: 40px;
+}
+
+.titre_produits_populaires span{
+    color: var(--accent-principal-night);
+}
+
+.produits_populaires_container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.produits_populaires_items{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+    border: 2px solid var(--accent-hover-night);
+    height: 100%;
+    width: 240px;
+    border-radius: 16px;
+    background-color: var(--fond-secondaire-night);
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-inline: auto;
+}
+
+.produits_populaires_items .best_seller{
+    position: absolute;
+    color: var(--text-principal-night);
+    font-size: 15px;
+    background-color: #0A0;
+    border: 1px solid #0A0;
+    border-radius: 6px;
+    padding: 3px;
+    top: -10px;
+}
+
+.produits_populaires_items .nouveau_produits_populaires{
+    position: absolute;
+    color: var(--text-principal-night);
+    font-size: 12px;
+    background-color: var(--accent-hover-night);
+    border: 1px solid var(--accent-hover-night);
+    border-radius: 6px;
+    padding: 3px;
+    top: -10px;
+}
+
+.phone_populaire{
+    border: 1px solid var(--fond-secondaire-night);
+    overflow: hidden;
+    object-fit: cover;
+    width: 120px;
+    height: 160px;
+    background-color: var( --fond-principal-night);
+    margin-top: 20px;
+    border-radius: 16px;
+}
+
+.phone_populaire img{
+    width: 120px;
+    height: 160px;
+}
+
+
+.nom_produits_populaires{
+    color: var(--text-principal-night);
+    font-size: 20px;
+}
+
+.marques_produits_populaires{
+    color: var(--text-secondaire-night);
+    font-size: 20px;
+}
+
+.prix_produits_populaires{
+    color: var(--accent-principal-night);
+    font-size: 20px;
+}
+
+.acheter_produits_populaires{
+    color: var(--text-principal-night);
+    font-size: 20px;
+    border: 2px solid var(--accent-principal-night);
+    border-radius: 8px;
+    background-color: var(--accent-principal-night);
+    padding-block: 3px;
+    padding-inline: 65px;
+    cursor: pointer;
+}
+
+.acheter_produits_populaires:hover{
+    background-color: var(--fond-secondaire-night);
+}
+
+
+
+
+/*-------   Quatrième section    --------*/
+.section4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5vw;
+
+}
+
+.pourquoi_nextcell{
+    color: var(--text-principal-night);
+    font-size: 40px;
+}
+
+.pourquoi_nextcell span{
+    color: var(--accent-principal-night);
+
+}
+
+.rend_different{
+    font-size: 20px;
+    color: var(--text-secondaire-night);
+}
+
+.container_choisir_nextcell{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.choisir_nextcell_items{
+    background-color: var(--fond-secondaire-night);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    border: 1px solid var(--text-secondaire-night);
+    border-radius: 16px;
+    width: 180px;
+    height: 280px;
+    padding: 20px;
+}
+
+.choisir_nextcell_items:hover{
+     border: 2px solid var(--accent-principal-night);
+}
+
+.dessin{
+    font-size: 40px;
+}
+
+.atout{
+    color: var(--text-principal-night);
+    font-size: 24px;
+}
+
+.atout_remarque{
+    color: var(--text-secondaire-night);
+    font-size: 18px;
+}
+
+
+/*-------   Cinquième section    --------*/
+.section5{
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5vw;
+    background-color: var(--fond-secondaire-night);
+    padding: 80px;
+}
+
+.clients_disent{
+    color: var(--text-principal-night);
+    font-size: calc(2.2vw + 5px);
+}
+
+.clients_disent span{
+    color: var(--accent-principal-night);
+}
+
+.container_clients_disent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.clients_disent_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid var(--text-secondaire-night);
+    border-radius: 16px;
+    width: 250px;
+    height: 200px;
+    background-color: var(--fond-principal-night);
+    padding: 0px;
+}
+
+.clients_disent_items:hover{
+     border: 2px solid var(--accent-principal-night);
+}
+
+.premier_lettre_nom_client_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    color: var(--text-principal-night);
+    background-color: var(--accent-hover-night);
+    border: 1px solid var(--accent-hover-night);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+
+.premier_lettre_nom_client_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    color: var(--text-principal-night);
+    background-color: #0A0;
+    border: 1px solid #0A0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.premier_lettre_nom_client_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    color: var(--text-principal-night);
+    background-color: rgb(255, 52, 0);
+    border: 1px solid rgb(255, 52, 0);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.comentaire_client{
+    color: var(--text-secondaire-night);
+    font-size: 20px;
+}
+
+.nom_client{
+    color: var(--text-principal-night);
+    font-size: 20px;
+}
+
+
+/*-------   Footer    --------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 3vw;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+.container_footer{
+    border-bottom: 1px solid var(--fond-secondaire-night);
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 2vw;
+    margin-inline: auto;
+    width: 100%;
+    height: 70%;
+}
+
+.footer_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-secondaire-night);
+    font-size: calc(1.1vw + 2px);
+    width: 30vw;
+    height: 100%;
+    text-align: center;
+}
+
+.sous_titre_footer{
+    color: var(--text-principal-night);
+    font-size: calc(1.1vw + 2px);
+}
+
+.footer_items a{
+    color: var(--text-secondaire-night);
+    font-weight: 100;
+}
+
+.footer_items li{
+    list-style-type: none;
+}
+
+.droits_reserve{
+    color: var(--text-secondaire-night);
+    margin-top: 8px;
+    font-size: calc(1.1vw + 2px);
+}
+
+
+.social{
+    margin-top: 1.1vw;
+}
+.social i{
+    font-size: 1.1vw;
+    color: var(--text-principal-night);
+    border: 1px solid var( --fond-secondaire-night);
+    padding: 0.8vw;
+    border-radius: 8px;
+    background-color: var( --fond-secondaire-night);
+}
+
+
+
+
+/*----------------------                RESPONSIVITE                    --------------------*/
+
+/*-------     Pour tablette       -----------*/
+@media (max-width: 768px){
+    .section1 aside{
+        display: none;
+        padding-inline: auto;
+    }
+    /*-------   Première section   ---------*/
+    
+    .section1 div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;;
+        justify-content: center;
+        text-align: center;
+    }
+    .bienvenue{
+        margin-inline: auto;
+    }
+    /*nombres de smartphons, marques, clients satisfait*/
+    .section1 div .nombres{
+        margin-top: 40px;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-inline: 2px solid var(--text-secondaire-night);
+    }
+
+    .marques_titre, .titre_produits_populaires, .pourquoi_nextcell, .clients_disent{
+        font-size: 24px;
+    }
+
+    .marques_logo{
+        width: 100px;
+        height: 100px;  
+    }
+
+     .marques_logo img{
+        width: 95px;
+        height: 95px;  
+    }
+
+    .marques_container{
+        display: flex;
+        flex-wrap: nowrap;
+        transition: transform O.4s ease;
+        gap: 40px; 
+    }
+
+    .marques_carousel{
+        overflow: hidden;
+    }
+    
+    #hamburger{
+        display: block;
+        color: var(--text-principal-night);
+        font-size: 30px;
+    }
+
+    header nav{
+        display: none;
+    }
+    header ul{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+}
+
+
+
+
+
+/*----------     Pour smartphone       -----------*/
+@media (max-width: 480px){
+    #hamburger{
+        display: block;
+        color: var(--text-principal-night);
+        font-size: 30px;
+    }
+
+    header nav{
+        display: none;
+    }
+    header ul{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+    .section1{
+        padding-inline: 20px;
+    }
+    .section1 div .nombres{
+        margin-top: 40px;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-inline: 2px solid var(--text-secondaire-night);
+    }
+    .section1 div .nombres p{
+        font-size: 13px;
+    }
+
+    .marques_titre, .titre_produits_populaires, .pourquoi_nextcell, .clients_disent{
+        font-size: 24px;
+    }
+
+    .marques_logo{
+        width: 80px;
+        height: 80px; 
+    }
+    
+    .marques_logo img{
+        width: 75px;
+        height: 75px;  
+    }
+
+    .marques_container{
+        gap: 20px;
+    }
+    
+}

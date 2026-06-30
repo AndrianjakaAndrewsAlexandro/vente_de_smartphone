@@ -1,0 +1,433 @@
+:root{
+    /*------------ Mode sombre -----------*/
+    --fond-principal-night: #0A0A0A;
+    --fond-secondaire-night: #1A1A2E;
+    --accent-principal-night: #2563EB;
+    --accent-hover-night: #3B82F6;
+    --text-principal-night: #FFFFFF;
+    --text-secondaire-night: #A0A0A0;
+
+    /*------------ Mode clair ------------*/
+    --fond-principal-light: #FFFFFF;
+    --fond-secondaire-light: #F1F5F9;
+    --accent-principal-light: #2563EB;
+    --accent-hover-light: #1D4ED8;
+    --text-principal-light: #0A0A0A;
+    --text-secondaire-light: #4B5563;
+
+    /*--------------Formulaire------------*/
+    --noir: #000;
+    --bleu: rgb(8, 8, 184);
+    --font_light: #f5f5f5f5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html{
+    border: #F00 2px solid;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    background-color: var(--fond-principal-night);
+    border: 2px solid blue;
+    width: 100fr;
+    height: 100%;
+}
+
+.ti-toggle-right{
+    color: var(--accent-principal-night);
+    font-size: 30px;
+    margin: 6px;
+}
+
+.ti-toggle-left{
+    display: none;
+    color: var(--accent-principal-night);
+    font-size: 30px;
+    margin: 6px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    border-bottom: var(--fond-secondaire-night) 1px solid;
+    padding-block: 20px;
+    padding-inline: 40px;
+    z-index: 119;
+}
+
+.next{
+    color: var(--accent-principal-night);
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+.cell{
+    color: var(--text-principal-night);
+    font-weight: 100;
+    font-size: 2vw;
+}
+
+.store{
+    color: var(--text-principal-night);
+    font-size: 10px;
+    font-weight: 100;
+    background-color: var(--accent-principal-light);
+    border: 1px solid var(--accent-principal-light);
+    border-radius: 16px;
+    padding: 5px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: var(--fond-secondaire-night);
+    border: var(--fond-secondaire-night) 1px solid;
+    border-radius: 2.5vw;
+    padding: 1.0vw;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 1.0vw;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;  
+    border: var(--fond-secondaire-night) solid 1px;
+    border-radius: 25px;
+    padding-inline: 1.2vw;
+    padding-block: 0.7vw;
+}
+
+nav ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(0.9vw + 6px);
+}
+
+nav ul li:hover{
+    background-color: var(--accent-hover-night);
+}
+
+.ti-user{
+    background-color: var(--accent-principal-night);
+    border-radius: 6px;
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-principal-night);
+    text-decoration: none;
+    font-weight: 600;  
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.0vw;
+    font-size: calc(0.9vw + 16px);
+}
+
+#hamburger{
+    display: none;
+    color: var(--text-principal-night);
+    font-size: 40px;
+}
+
+
+#menu_cache{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 70%;
+    font-size: 15px;
+    right: -100%;
+    top: 10px;
+    z-index: 2;
+    border-left: 2px solid var(--accent-principal-night);
+    background-color: var(--fond-secondaire-night);
+    padding: 24px;
+    z-index: 99;
+}
+
+#menu_cache li{
+    list-style-type: none;
+}
+
+#menu_cache li {
+    font-size: 20px;
+    border: 1px solid var(--text-secondaire-light);
+    padding-left: 20px;
+    padding-block: 20px;
+    border-radius: 8px;
+    text-align: left;
+    color: var(--text-secondaire-night);
+}
+
+#menu_cache li i{
+    margin-right: 8px;
+}
+
+
+#menu_cache .separation{
+    border-inline: none;
+    border-top: none;
+}
+
+#menu_cache .connexion_cache{
+    background-color: var(--accent-principal-night);
+    color: var(--text-principal-night);
+
+}
+
+#menu_cache .connexion_cache{
+    color: var(--text-principal-night);
+    background-color: var(--fond-principal-night);
+    border: 2px solid var(--accent-hover-light);
+}
+
+#overlay{
+    display: none;
+    z-index: 98;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+} 
+
+#overlay.active{
+    display: block;
+}
+
+#menu_cache.ouvert{
+    right: 0px;
+}
+
+/*--------------      Formulaire      ---------------*/
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form{
+    border: none;
+    color: var(--text-principal-night);
+}
+
+
+.inscription_form{
+    width: 35vw;
+    height: 100%;
+    padding: 2.4vw;
+    border: 3px solid var(--accent-principal-night);
+    margin-inline: auto;
+    margin-block-start: 0.4vw;
+    border-radius: 1.6vw;
+    background-color: var(--fond-secondaire-night);
+}
+
+#name, #firstname, #email, #password, #user_name, #password_inscription, #user_name_inscription{
+    width: 100%;
+    height: 4vw;
+    margin-top: 0.1vw;
+    border-radius: 0.4vw;
+    border: 2px solid var(--accent-principal-night);
+    padding-inline: 0.4vw;
+    font-size: calc(1.2vw + 4px);
+    background-color: var(--fond-secondaire-night);
+    color: var(--text-principal-night);
+}
+
+.titre{
+    font-size: calc(1.2vw + 4px);
+    font-weight: 600;
+}
+
+.titre_inscription{
+    font-size: calc(1.4vw + 4px);
+    color: var(--accent-principal-night);
+    font-weight: 600;
+}
+
+.boite_div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+}
+.boite{
+    width: 45%;
+    height: 4vw;
+    margin-inline: auto;
+    font-size: calc(1.2vw + 4px);
+    font-weight: 600;
+    color: var(--text-principal-night);
+    background-color: var(--accent-principal-night);
+    border: 2px solid var(--accent-principal-night);
+    border-radius: 0.6vw;
+    cursor: pointer;
+}
+
+.boite:hover{
+    background-color: var(--fond-secondaire-night);
+}
+
+/*-------   Footer    --------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 3vw;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+.container_footer{
+    border-bottom: 1px solid var(--fond-secondaire-night);
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 2vw;
+    margin-inline: auto;
+    width: 100%;
+    height: 70%;
+}
+
+.footer_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-secondaire-night);
+    font-size: calc(1.1vw + 2px);
+    width: 30vw;
+    height: 100%;
+    text-align: center;
+}
+
+.sous_titre_footer{
+    color: var(--text-principal-night);
+    font-size: calc(1.1vw + 2px);
+}
+
+.footer_items a{
+    color: var(--text-secondaire-night);
+    font-weight: 100;
+}
+
+.footer_items li{
+    list-style-type: none;
+}
+
+.droits_reserve{
+    color: var(--text-secondaire-night);
+    margin-top: 8px;
+    font-size: calc(1.1vw + 2px);
+}
+
+
+.social{
+    margin-top: 1.1vw;
+}
+.social i{
+    font-size: 1.1vw;
+    color: var(--text-principal-night);
+    border: 1px solid var( --fond-secondaire-night);
+    padding: 0.8vw;
+    border-radius: 8px;
+    background-color: var( --fond-secondaire-night);
+}
+
+
+
+
+/*----------------------                RESPONSIVITE                    --------------------*/
+
+/*-------     Pour tablette       -----------*/
+@media (max-width: 768px){
+   #name, #firstname, #email, #password, #user_name, #password_inscription, #user_name_inscription{
+    border-width: 1px;
+   }
+   .inscription_form{
+    border-width: 2px;
+   }
+    
+   #hamburger{
+        display: block;
+        color: var(--text-principal-night);
+        font-size: 30px;
+    }
+
+    header nav{
+        display: none;
+    }
+    header ul{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+
+}
+
+
+
+
+
+/*----------     Pour smartphone       -----------*/
+@media (max-width: 480px){
+    #hamburger{
+        display: block;
+        color: var(--text-principal-night);
+        font-size: 30px;
+    }
+
+    header nav{
+        display: none;
+    }
+    header ul{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+   
+    .inscription_form{
+        width: 45vw;
+        padding: 2.2vw;
+    }
+    
+}

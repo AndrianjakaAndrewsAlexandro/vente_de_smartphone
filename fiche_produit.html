@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextCell (Vente de smartphone)</title>
+    <link rel="stylesheet" href="fiche_produit.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont/tabler-icons.min.css">
+
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <header>
+        <h1><span class="next">Next</span><span class="cell">Cell</span><span class="store">STORE</span></h1>
+        <nav>
+            <ul>
+                <li class="acceuil"><a href="index.html">Acceuil</a></li>
+                <li class="smartphone"><a href="smartphone.html" >Catalogue</a></li>
+                <li class="apropos"><a href="apropos.html" class="apropos">À propos</a></li>
+                <li class="contact"><a href="contact.html" class="contact">Contact</a></li>
+                <li class="fiche_produit"><a href="fiche_produit.html" class="fiche_produit">Produits</a></li>
+            </ul>
+            <i class="ti ti-toggle-right" id="light_mode"></i>
+            <i class="ti ti-toggle-left" id="night_mode"></i>
+        </nav>
+        <ul class="icons">
+            <li><a href="fiche_produit.html"><i class="ti ti-search"></i></a></li>
+            <li><a href="inscription_connexion.html"><i class="ti ti-user"></i></a></li>
+        </ul>
+        <ul id="menu_cache">
+            <li class="acceuil_cache"><a href="index.html"><i class="ti ti-home"></i> Acceuil</a></li>
+            <li class="smartphone_cache"><a href="smartphone.html" ><i class="ti ti-device-mobile"></i> Catalogue</a></li>
+            <li class="apropos_cache"><a href="apropos.html"><i class="ti ti-info-circle"></i> À propos</a></li>
+            <li class="contact_cache"><a href="contact.html"><i class="ti ti-mail"></i> Contact</a></li>
+            <li class="fiche_produit_cache"><a href="fiche_produit.html"><i class="ti ti-shopping-cart"></i></i> Produits</a></li>
+            <li class="separation"></li>
+            <li class="rechercher_cache"><a href="fiche_produit.html"><i class="ti ti-search"></i> Rechercher</a></li>
+            <li class="connexion_cache"><a href="inscription/connexion.html"><i class="ti ti-user"></i> Connexion</a></li>
+        </ul>
+        <i class="ti ti-menu-2" id="hamburger"></i>
+    </header>
+    <section class="section1">
+        <div class="petit_navbar"><div class="input_recherche"><i class="ti ti-search"></i> <input type="text" placeholder="Rechercher un smartphone..." id="recherche"></div></div>
+        <div class="tri_navbar"><span id="tous">Tous</span><span id="apple">Apple</span><span id="samsung">Samsung</span><span id="xiaomi">Xiaomi</span>
+            <span id="oppo">Oppo</span><span id="huawei">Huawei</span><span id="realme">Realme</span><span id="oneplus">Oneplus</span></div>
+        <div class="grid_container">
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/Xiaomi 14 pro.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi 14 Pro</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">1 999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/redmi note 13.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi Redmi Note 13</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="grid_items phone_apple">
+                <p class="best_seller">BEST SELLER</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 15 pro max.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 15 Pro Max</p>
+                <p class="marques">Apple</p>
+                <p class="prix">3 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_apple">
+                <p class="nouveau_produits_populaires">NOUVEAU</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 14_2.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 14</p>
+                <p class="marques">Apple</p>
+                <p class="prix">2 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy-s24-ultra-highlights-color-titanium-gray-back-mo.jpg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy S24 Ultra</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">3 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy A54.jpeg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy A54</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">1 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/Oppo Find X7 Pro.jpeg" alt="Oppo Find X7 Pro photo">
+                </div>
+                <p class="nom_produits">Oppo Find X7 Pro</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">2 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/OppoReno 11.jpeg" alt="OppoReno 11 photo">
+                </div>
+                <p class="nom_produits">OppoReno 11</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">1 099 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_realme">
+                <div class="phone">
+                    <img src="Smartphone_images/Realme 12 Pro+.jpeg" alt="Realme 12 Pro+ PHOTO">
+                </div>
+                <p class="nom_produits">Realme 12 Pro+</p>
+                <p class="marques">Realme</p>
+                <p class="prix">899 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oneplus">
+                <div class="phone">
+                    <img src="Smartphone_images/OnePlus 12.jpeg" alt="OnePlus 12 photo">
+                </div>
+                <p class="nom_produits">OnePlus 12</p>
+                <p class="marques">Oneplus</p>
+                <p class="prix">1 799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei P60 Pro.png" alt="Huawei P60 Pro photo">
+                </div>
+                <p class="nom_produits">Huawei P60 Pro</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">2 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei Nova 11.jpeg" alt="Huawei Nova 11 photo">
+                </div>
+                <p class="nom_produits">Huawei Nova 11</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <!-- -----------------------------------------------FINI------------------------------------- -->
+            <div class="grid_items phone_apple">
+                <p class="best_seller">BEST SELLER</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 15 pro max.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 15 Pro Max</p>
+                <p class="marques">Apple</p>
+                <p class="prix">3 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_apple">
+                <p class="nouveau_produits_populaires">NOUVEAU</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 14_2.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 14</p>
+                <p class="marques">Apple</p>
+                <p class="prix">2 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy-s24-ultra-highlights-color-titanium-gray-back-mo.jpg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy S24 Ultra</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">3 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy A54.jpeg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy A54</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">1 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/Xiaomi 14 pro.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi 14 Pro</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">1 999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/redmi note 13.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi Redmi Note 13</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/Oppo Find X7 Pro.jpeg" alt="Oppo Find X7 Pro photo">
+                </div>
+                <p class="nom_produits">Oppo Find X7 Pro</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">2 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/OppoReno 11.jpeg" alt="OppoReno 11 photo">
+                </div>
+                <p class="nom_produits">OppoReno 11</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">1 099 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_realme">
+                <div class="phone">
+                    <img src="Smartphone_images/Realme 12 Pro+.jpeg" alt="Realme 12 Pro+ PHOTO">
+                </div>
+                <p class="nom_produits">Realme 12 Pro+</p>
+                <p class="marques">Realme</p>
+                <p class="prix">899 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oneplus">
+                <div class="phone">
+                    <img src="Smartphone_images/OnePlus 12.jpeg" alt="OnePlus 12 photo">
+                </div>
+                <p class="nom_produits">OnePlus 12</p>
+                <p class="marques">Oneplus</p>
+                <p class="prix">1 799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei P60 Pro.png" alt="Huawei P60 Pro photo">
+                </div>
+                <p class="nom_produits">Huawei P60 Pro</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">2 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei Nova 11.jpeg" alt="Huawei Nova 11 photo">
+                </div>
+                <p class="nom_produits">Huawei Nova 11</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <!-- -------------------------------------FINI--------------------------------------------  -->
+            <div class="grid_items phone_apple">
+                <p class="best_seller">BEST SELLER</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 15 pro max.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 15 Pro Max</p>
+                <p class="marques">Apple</p>
+                <p class="prix">3 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_apple">
+                <p class="nouveau_produits_populaires">NOUVEAU</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 14_2.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 14</p>
+                <p class="marques">Apple</p>
+                <p class="prix">2 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy-s24-ultra-highlights-color-titanium-gray-back-mo.jpg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy S24 Ultra</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">3 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy A54.jpeg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy A54</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">1 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/Xiaomi 14 pro.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi 14 Pro</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">1 999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/redmi note 13.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi Redmi Note 13</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/Oppo Find X7 Pro.jpeg" alt="Oppo Find X7 Pro photo">
+                </div>
+                <p class="nom_produits">Oppo Find X7 Pro</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">2 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/OppoReno 11.jpeg" alt="OppoReno 11 photo">
+                </div>
+                <p class="nom_produits">OppoReno 11</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">1 099 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_realme">
+                <div class="phone">
+                    <img src="Smartphone_images/Realme 12 Pro+.jpeg" alt="Realme 12 Pro+ PHOTO">
+                </div>
+                <p class="nom_produits">Realme 12 Pro+</p>
+                <p class="marques">Realme</p>
+                <p class="prix">899 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oneplus">
+                <div class="phone">
+                    <img src="Smartphone_images/OnePlus 12.jpeg" alt="OnePlus 12 photo">
+                </div>
+                <p class="nom_produits">OnePlus 12</p>
+                <p class="marques">Oneplus</p>
+                <p class="prix">1 799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei P60 Pro.png" alt="Huawei P60 Pro photo">
+                </div>
+                <p class="nom_produits">Huawei P60 Pro</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">2 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei Nova 11.jpeg" alt="Huawei Nova 11 photo">
+                </div>
+                <p class="nom_produits">Huawei Nova 11</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <!-- ------------------------------------------FINI----------------------------------------  -->
+            <div class="grid_items phone_apple">
+                <p class="best_seller">BEST SELLER</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 15 pro max.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 15 Pro Max</p>
+                <p class="marques">Apple</p>
+                <p class="prix">3 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_apple">
+                <p class="nouveau_produits_populaires">NOUVEAU</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 14_2.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 14</p>
+                <p class="marques">Apple</p>
+                <p class="prix">2 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy-s24-ultra-highlights-color-titanium-gray-back-mo.jpg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy S24 Ultra</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">3 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy A54.jpeg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy A54</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">1 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/Xiaomi 14 pro.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi 14 Pro</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">1 999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/redmi note 13.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi Redmi Note 13</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/Oppo Find X7 Pro.jpeg" alt="Oppo Find X7 Pro photo">
+                </div>
+                <p class="nom_produits">Oppo Find X7 Pro</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">2 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/OppoReno 11.jpeg" alt="OppoReno 11 photo">
+                </div>
+                <p class="nom_produits">OppoReno 11</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">1 099 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_realme">
+                <div class="phone">
+                    <img src="Smartphone_images/Realme 12 Pro+.jpeg" alt="Realme 12 Pro+ PHOTO">
+                </div>
+                <p class="nom_produits">Realme 12 Pro+</p>
+                <p class="marques">Realme</p>
+                <p class="prix">899 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oneplus">
+                <div class="phone">
+                    <img src="Smartphone_images/OnePlus 12.jpeg" alt="OnePlus 12 photo">
+                </div>
+                <p class="nom_produits">OnePlus 12</p>
+                <p class="marques">Oneplus</p>
+                <p class="prix">1 799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei P60 Pro.png" alt="Huawei P60 Pro photo">
+                </div>
+                <p class="nom_produits">Huawei P60 Pro</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">2 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei Nova 11.jpeg" alt="Huawei Nova 11 photo">
+                </div>
+                <p class="nom_produits">Huawei Nova 11</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <!-- --------------------------------------------FINI-----------------------------------------  -->
+            <div class="grid_items phone_apple">
+                <p class="best_seller">BEST SELLER</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 15 pro max.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 15 Pro Max</p>
+                <p class="marques">Apple</p>
+                <p class="prix">3 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_apple">
+                <p class="nouveau_produits_populaires">NOUVEAU</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 14_2.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 14</p>
+                <p class="marques">Apple</p>
+                <p class="prix">2 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy-s24-ultra-highlights-color-titanium-gray-back-mo.jpg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy S24 Ultra</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">3 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy A54.jpeg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy A54</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">1 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/Xiaomi 14 pro.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi 14 Pro</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">1 999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/redmi note 13.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi Redmi Note 13</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/Oppo Find X7 Pro.jpeg" alt="Oppo Find X7 Pro photo">
+                </div>
+                <p class="nom_produits">Oppo Find X7 Pro</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">2 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/OppoReno 11.jpeg" alt="OppoReno 11 photo">
+                </div>
+                <p class="nom_produits">OppoReno 11</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">1 099 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_realme">
+                <div class="phone">
+                    <img src="Smartphone_images/Realme 12 Pro+.jpeg" alt="Realme 12 Pro+ PHOTO">
+                </div>
+                <p class="nom_produits">Realme 12 Pro+</p>
+                <p class="marques">Realme</p>
+                <p class="prix">899 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oneplus">
+                <div class="phone">
+                    <img src="Smartphone_images/OnePlus 12.jpeg" alt="OnePlus 12 photo">
+                </div>
+                <p class="nom_produits">OnePlus 12</p>
+                <p class="marques">Oneplus</p>
+                <p class="prix">1 799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei P60 Pro.png" alt="Huawei P60 Pro photo">
+                </div>
+                <p class="nom_produits">Huawei P60 Pro</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">2 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei Nova 11.jpeg" alt="Huawei Nova 11 photo">
+                </div>
+                <p class="nom_produits">Huawei Nova 11</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <!-- --------------------------------------------FINI----------------------------------------  -->
+            <div class="grid_items phone_apple">
+                <p class="best_seller">BEST SELLER</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 15 pro max.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 15 Pro Max</p>
+                <p class="marques">Apple</p>
+                <p class="prix">3 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_apple">
+                <p class="nouveau_produits_populaires">NOUVEAU</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 14_2.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 14</p>
+                <p class="marques">Apple</p>
+                <p class="prix">2 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy-s24-ultra-highlights-color-titanium-gray-back-mo.jpg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy S24 Ultra</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">3 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy A54.jpeg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy A54</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">1 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/Xiaomi 14 pro.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi 14 Pro</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">1 999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/redmi note 13.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi Redmi Note 13</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/Oppo Find X7 Pro.jpeg" alt="Oppo Find X7 Pro photo">
+                </div>
+                <p class="nom_produits">Oppo Find X7 Pro</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">2 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/OppoReno 11.jpeg" alt="OppoReno 11 photo">
+                </div>
+                <p class="nom_produits">OppoReno 11</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">1 099 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_realme">
+                <div class="phone">
+                    <img src="Smartphone_images/Realme 12 Pro+.jpeg" alt="Realme 12 Pro+ PHOTO">
+                </div>
+                <p class="nom_produits">Realme 12 Pro+</p>
+                <p class="marques">Realme</p>
+                <p class="prix">899 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oneplus">
+                <div class="phone">
+                    <img src="Smartphone_images/OnePlus 12.jpeg" alt="OnePlus 12 photo">
+                </div>
+                <p class="nom_produits">OnePlus 12</p>
+                <p class="marques">Oneplus</p>
+                <p class="prix">1 799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei P60 Pro.png" alt="Huawei P60 Pro photo">
+                </div>
+                <p class="nom_produits">Huawei P60 Pro</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">2 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei Nova 11.jpeg" alt="Huawei Nova 11 photo">
+                </div>
+                <p class="nom_produits">Huawei Nova 11</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <!-- ------------------------------------------FINI------------------------------------------  -->
+            <div class="grid_items phone_apple">
+                <p class="best_seller">BEST SELLER</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 15 pro max.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 15 Pro Max</p>
+                <p class="marques">Apple</p>
+                <p class="prix">3 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_apple">
+                <p class="nouveau_produits_populaires">NOUVEAU</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 14_2.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 14</p>
+                <p class="marques">Apple</p>
+                <p class="prix">2 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy-s24-ultra-highlights-color-titanium-gray-back-mo.jpg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy S24 Ultra</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">3 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy A54.jpeg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy A54</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">1 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/Xiaomi 14 pro.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi 14 Pro</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">1 999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/redmi note 13.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi Redmi Note 13</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/Oppo Find X7 Pro.jpeg" alt="Oppo Find X7 Pro photo">
+                </div>
+                <p class="nom_produits">Oppo Find X7 Pro</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">2 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/OppoReno 11.jpeg" alt="OppoReno 11 photo">
+                </div>
+                <p class="nom_produits">OppoReno 11</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">1 099 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_realme">
+                <div class="phone">
+                    <img src="Smartphone_images/Realme 12 Pro+.jpeg" alt="Realme 12 Pro+ PHOTO">
+                </div>
+                <p class="nom_produits">Realme 12 Pro+</p>
+                <p class="marques">Realme</p>
+                <p class="prix">899 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oneplus">
+                <div class="phone">
+                    <img src="Smartphone_images/OnePlus 12.jpeg" alt="OnePlus 12 photo">
+                </div>
+                <p class="nom_produits">OnePlus 12</p>
+                <p class="marques">Oneplus</p>
+                <p class="prix">1 799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei P60 Pro.png" alt="Huawei P60 Pro photo">
+                </div>
+                <p class="nom_produits">Huawei P60 Pro</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">2 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei Nova 11.jpeg" alt="Huawei Nova 11 photo">
+                </div>
+                <p class="nom_produits">Huawei Nova 11</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <!-- -----------------------------------------FINI-----------------------------------------  -->
+             <div class="grid_items phone_apple">
+                <p class="best_seller">BEST SELLER</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 15 pro max.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 15 Pro Max</p>
+                <p class="marques">Apple</p>
+                <p class="prix">3 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_apple">
+                <p class="nouveau_produits_populaires">NOUVEAU</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 14_2.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 14</p>
+                <p class="marques">Apple</p>
+                <p class="prix">2 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy-s24-ultra-highlights-color-titanium-gray-back-mo.jpg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy S24 Ultra</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">3 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy A54.jpeg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy A54</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">1 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/Xiaomi 14 pro.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi 14 Pro</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">1 999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/redmi note 13.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi Redmi Note 13</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/Oppo Find X7 Pro.jpeg" alt="Oppo Find X7 Pro photo">
+                </div>
+                <p class="nom_produits">Oppo Find X7 Pro</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">2 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/OppoReno 11.jpeg" alt="OppoReno 11 photo">
+                </div>
+                <p class="nom_produits">OppoReno 11</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">1 099 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_realme">
+                <div class="phone">
+                    <img src="Smartphone_images/Realme 12 Pro+.jpeg" alt="Realme 12 Pro+ PHOTO">
+                </div>
+                <p class="nom_produits">Realme 12 Pro+</p>
+                <p class="marques">Realme</p>
+                <p class="prix">899 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oneplus">
+                <div class="phone">
+                    <img src="Smartphone_images/OnePlus 12.jpeg" alt="OnePlus 12 photo">
+                </div>
+                <p class="nom_produits">OnePlus 12</p>
+                <p class="marques">Oneplus</p>
+                <p class="prix">1 799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei P60 Pro.png" alt="Huawei P60 Pro photo">
+                </div>
+                <p class="nom_produits">Huawei P60 Pro</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">2 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei Nova 11.jpeg" alt="Huawei Nova 11 photo">
+                </div>
+                <p class="nom_produits">Huawei Nova 11</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <!-- ----------------------------------------FINI-------------------------------------------- -->
+            <div class="grid_items phone_apple">
+                <p class="best_seller">BEST SELLER</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 15 pro max.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 15 Pro Max</p>
+                <p class="marques">Apple</p>
+                <p class="prix">3 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_apple">
+                <p class="nouveau_produits_populaires">NOUVEAU</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 14_2.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 14</p>
+                <p class="marques">Apple</p>
+                <p class="prix">2 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy-s24-ultra-highlights-color-titanium-gray-back-mo.jpg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy S24 Ultra</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">3 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy A54.jpeg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy A54</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">1 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/Xiaomi 14 pro.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi 14 Pro</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">1 999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/redmi note 13.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi Redmi Note 13</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/Oppo Find X7 Pro.jpeg" alt="Oppo Find X7 Pro photo">
+                </div>
+                <p class="nom_produits">Oppo Find X7 Pro</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">2 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/OppoReno 11.jpeg" alt="OppoReno 11 photo">
+                </div>
+                <p class="nom_produits">OppoReno 11</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">1 099 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_realme">
+                <div class="phone">
+                    <img src="Smartphone_images/Realme 12 Pro+.jpeg" alt="Realme 12 Pro+ PHOTO">
+                </div>
+                <p class="nom_produits">Realme 12 Pro+</p>
+                <p class="marques">Realme</p>
+                <p class="prix">899 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oneplus">
+                <div class="phone">
+                    <img src="Smartphone_images/OnePlus 12.jpeg" alt="OnePlus 12 photo">
+                </div>
+                <p class="nom_produits">OnePlus 12</p>
+                <p class="marques">Oneplus</p>
+                <p class="prix">1 799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei P60 Pro.png" alt="Huawei P60 Pro photo">
+                </div>
+                <p class="nom_produits">Huawei P60 Pro</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">2 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei Nova 11.jpeg" alt="Huawei Nova 11 photo">
+                </div>
+                <p class="nom_produits">Huawei Nova 11</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <!-- --------------------------------------------FINI------------------------------------------  -->
+            <div class="grid_items phone_apple">
+                <p class="best_seller">BEST SELLER</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 15 pro max.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 15 Pro Max</p>
+                <p class="marques">Apple</p>
+                <p class="prix">3 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_apple">
+                <p class="nouveau_produits_populaires">NOUVEAU</p>
+                <div class="phone">
+                    <img src="Smartphone_images/iphone 14_2.jpeg" alt="">
+                </div>
+                <p class="nom_produits">iPhone 14</p>
+                <p class="marques">Apple</p>
+                <p class="prix">2 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy-s24-ultra-highlights-color-titanium-gray-back-mo.jpg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy S24 Ultra</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">3 299 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_samsung">
+                <div class="phone">
+                    <img src="Smartphone_images/galaxy A54.jpeg" alt="">
+                </div>
+                <p class="nom_produits">Samsung Galaxy A54</p>
+                <p class="marques">Samsung</p>
+                <p class="prix">1 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/Xiaomi 14 pro.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi 14 Pro</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">1 999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_xiaomi">
+                <div class="phone">
+                    <img src="Smartphone_images/redmi note 13.jpg" alt="">
+                </div>
+                <p class="nom_produits">Xiaomi Redmi Note 13</p>
+                <p class="marques">Xiaomi</p>
+                <p class="prix">799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/Oppo Find X7 Pro.jpeg" alt="Oppo Find X7 Pro photo">
+                </div>
+                <p class="nom_produits">Oppo Find X7 Pro</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">2 199 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oppo">
+                <div class="phone">
+                    <img src="Smartphone_images/OppoReno 11.jpeg" alt="OppoReno 11 photo">
+                </div>
+                <p class="nom_produits">OppoReno 11</p>
+                <p class="marques">Oppo</p>
+                <p class="prix">1 099 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_realme">
+                <div class="phone">
+                    <img src="Smartphone_images/Realme 12 Pro+.jpeg" alt="Realme 12 Pro+ PHOTO">
+                </div>
+                <p class="nom_produits">Realme 12 Pro+</p>
+                <p class="marques">Realme</p>
+                <p class="prix">899 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_oneplus">
+                <div class="phone">
+                    <img src="Smartphone_images/OnePlus 12.jpeg" alt="OnePlus 12 photo">
+                </div>
+                <p class="nom_produits">OnePlus 12</p>
+                <p class="marques">Oneplus</p>
+                <p class="prix">1 799 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei P60 Pro.png" alt="Huawei P60 Pro photo">
+                </div>
+                <p class="nom_produits">Huawei P60 Pro</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">2 499 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <div class="phone_huawei">
+                <div class="phone">
+                    <img src="Smartphone_images/Huawei Nova 11.jpeg" alt="Huawei Nova 11 photo">
+                </div>
+                <p class="nom_produits">Huawei Nova 11</p>
+                <p class="marques">Huawei</p>
+                <p class="prix">999 000 Ar</p>
+                <p class="acheter">Acheter</p>
+            </div>
+            <!-- ------------------------------------------FINI--------------------------------------------  -->
+        </div>
+    </section>            
+    <footer>
+        <div class="container_footer">
+            <div class="footer_items">
+                <h1><span class="next">Next</span><span class="cell">Cell</span></h1>
+                <p>Votre boutique de smartphone de confiance à Madagascar</p>
+            </div>
+            <div class="footer_items">
+                <p class="sous_titre_footer">Navigation</p>
+                <ul>
+                    <li><a href="#acceuil">Acceuil</a></li>
+                    <li><a href="smartphone.html">Smartphone</a></li>
+                    <li><a href="apropos.html"> A propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+            </div>
+            <div class="footer_items">
+                <p class="sous_titre_footer">Contact</p>
+                <ul>
+                    <li><i class="ti ti-map-pin"></i> Antananarivo</li>
+                    <li><i class="ti ti-phone"></i> +261 34 00 000 00</li>
+                    <li><i class="ti ti-mail"></i> contact@nextcell.mg</li>
+                </ul>
+            </div>
+            <div class="footer_items">
+                <p class="sous_titre_footer">Suivez-nous</p>
+                <div class="social">
+                    <i class="ti ti-brand-facebook"></i>
+                    <i class="ti ti-brand-linkedin"></i>
+                    <i class="ti ti-player-play"></i>
+                </div>
+            </div>
+        </div>
+        <p class="droits_reserve">© 2026 NextCell. Tous droits réservés</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
