@@ -24,16 +24,12 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-html{
-    border: #F00 2px solid;
-}
-
 body{
     display: flex;
     flex-direction: column;
     gap: 80px;
     background-color: var(--fond-principal-night);
-    border: 2px solid blue;
+    border: 1px solid var(--fond-principal-night);
     width: 100fr;
     height: 100%;
 }
@@ -60,7 +56,7 @@ header{
     border-bottom: var(--fond-secondaire-night) 1px solid;
     padding-block: 20px;
     padding-inline: 40px;
-    z-index: 119;
+    z-index: 119;   
 }
 
 .next{
@@ -94,6 +90,18 @@ nav{
     border: var(--fond-secondaire-night) 1px solid;
     border-radius: 2.5vw;
     padding: 1.0vw;
+    animation: header 3s ease forwards;
+}
+
+@keyframes header{
+    from{
+        transform: translateY(100px);
+        transform: scale(0);
+    }
+    to{
+        transform: translateY(0px);
+        transform: scale(1);
+    }
 }
 
 nav ul{
@@ -232,6 +240,9 @@ ul li a{
     padding-inline: 60px;
     display: flex;
     justify-content: space-between;
+    animation: section 3s ease forwards;
+    opacity: 0;
+    transform: translateY(-70px);
 }
 
 .bienvenue{
@@ -386,6 +397,9 @@ ul li a{
     align-items: center;
     justify-content: center;
     gap: 40px;
+    animation: section 3s ease 1s forwards;
+    opacity: 0;
+    transform: translateY(-70px);
 }
 
 .marques_titre{
@@ -486,6 +500,9 @@ ul li a{
     justify-content: center;
     gap: 20px;
     width: 100%;
+    animation: section 3s ease 2s forwards;
+    opacity: 0;
+    transform: translateY(-70px);
 }
 
 .titre_produits_populaires{
@@ -606,7 +623,9 @@ ul li a{
     align-items: center;
     text-align: center;
     gap: 1.5vw;
-
+    animation: section 3s ease 3s forwards;
+    opacity: 0;
+    transform: translateY(-70px);
 }
 
 .pourquoi_nextcell{
@@ -680,6 +699,9 @@ ul li a{
     gap: 1.5vw;
     background-color: var(--fond-secondaire-night);
     padding: 80px;
+    animation: section 3s ease 4s forwards;
+    opacity: 0;
+    transform: translateY(-70px);
 }
 
 .clients_disent{
@@ -840,6 +862,17 @@ footer{
     background-color: var( --fond-secondaire-night);
 }
 
+/*----------------------                  ANIMATIONS                     ------------------------*/
+@keyframes section{
+    from{
+        transform: translateY(-70px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 
 
 

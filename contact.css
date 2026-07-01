@@ -24,16 +24,12 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-html{
-    border: #F00 2px solid;
-}
-
 body{
     display: flex;
     flex-direction: column;
     gap: 80px;
     background-color: var(--fond-principal-night);
-    border: 2px solid blue;
+    border: 1px solid var(--fond-principal-night);
     width: 100fr;
     height: 100%;
 }
@@ -230,6 +226,9 @@ main{
     display: flex;
     flex-direction: column;
     gap: 4vw;
+    animation: section 3s ease forwards;
+    opacity: 0;
+    transform: translateY(-70px);
 }
 
 .titre{
@@ -438,6 +437,19 @@ footer{
     padding: 0.8vw;
     border-radius: 8px;
     background-color: var( --fond-secondaire-night);
+}
+
+
+/*----------------------                  ANIMATIONS                     ------------------------*/
+@keyframes section{
+    from{
+        transform: translateY(-70px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 

@@ -24,16 +24,12 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-html{
-    border: #F00 2px solid;
-}
-
 body{
     display: flex;
     flex-direction: column;
     gap: 80px;
     background-color: var(--fond-principal-night);
-    border: 2px solid blue;
+    border: 1px solid var(--fond-principal-night);
     width: 100fr;
     height: 100%;
 }
@@ -241,6 +237,9 @@ ul li a{
     padding-block: 60px;
     padding-inline:20vw;
     background-color: var(--fond-secondaire-night);
+    animation: section 3s ease 0s forwards;
+    opacity: 0;
+    transform: translateY(-70px);
 }
 
 .section1 .qui_sommes_nous{
@@ -276,6 +275,9 @@ ul li a{
     width: 90vw;
     margin-inline: auto;
     justify-content: space-between;
+    animation: section 3s ease 1s forwards;
+    opacity: 0;
+    transform: translateY(-70px);
 }
 
 .sous_section1{
@@ -330,6 +332,9 @@ ul li a{
     width: 90vw;
     margin-inline: auto;
     gap: 1vw;
+    animation: section 3s ease 2s forwards;
+    opacity: 0;
+    transform: translateY(-70px);
 }
 
 .section3 div{
@@ -375,6 +380,9 @@ ul li a{
     align-items: center;
     text-align: center;
     gap: 2vw;
+    animation: section 3s ease 3s forwards;
+    opacity: 0;
+    transform: translateY(-70px);
 }
 
 .section4 h4{
@@ -538,6 +546,20 @@ footer{
     padding: 0.8vw;
     border-radius: 8px;
     background-color: var( --fond-secondaire-night);
+}
+
+
+/*-------------------------------              ANIMATIONS                      --------------------------------*/
+
+@keyframes section{
+    from{
+        transform: translateY(-70px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 
