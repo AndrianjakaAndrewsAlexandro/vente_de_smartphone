@@ -554,6 +554,22 @@ footer{
     .phone_apple, .phone_samsung, .phone_xiaomi, .phone_oppo, .phone_realme, .phone_oneplus, .phone_huawei{
         min-height: 330px;
     }
+
+    #hamburger{
+        display: block;
+        color: var(--text-principal-night);
+        font-size: 30px;
+    }
+
+    header nav{
+        display: none;
+    }
+    header ul{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
 }
 
 @media (max-width: 620px){

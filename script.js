@@ -21,8 +21,11 @@ overlay.addEventListener("click", cacher);
 
 //MODE
 
-const mode= document.querySelector("#light_mode");
-const root= document.documentElement;
+const light_mode = document.getElementById("light_mode");
+const night_mode = document.getElementById("night_mode");
+const light_mode_cache = document.getElementById("light_mode_cache");
+const night_mode_cache = document.getElementById("night_mode_cache");
+const root = document.documentElement;
 
 function mode_clair(){
     console.log("mode clair clicked");
@@ -36,6 +39,9 @@ function mode_clair(){
 
     light_mode.style.display="none";
     night_mode.style.display="block";
+
+    light_mode_cache.style.display="none";
+    night_mode_cache.style.display="block";
 }
 
 function mode_sombre(){
@@ -50,10 +56,16 @@ function mode_sombre(){
 
     light_mode.style.display="block";
     night_mode.style.display="none";
+
+    light_mode_cache.style.display="block";
+    night_mode_cache.style.display="none";
 }
 
 light_mode.addEventListener("click", mode_clair);
 night_mode.addEventListener("click", mode_sombre);
+
+light_mode_cache.addEventListener("click", mode_clair);
+night_mode_cache.addEventListener("click", mode_sombre);
 
 
 

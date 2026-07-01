@@ -93,17 +93,6 @@ nav{
     animation: header 3s ease forwards;
 }
 
-@keyframes header{
-    from{
-        transform: translateY(100px);
-        transform: scale(0);
-    }
-    to{
-        transform: translateY(0px);
-        transform: scale(1);
-    }
-}
-
 nav ul{
     display: flex;
     justify-content: space-around;
@@ -871,6 +860,17 @@ footer{
     to{
         transform: translateY(0px);
         opacity: 1;
+    }
+}
+
+@keyframes header{
+    from{
+        transform: translateY(100px);
+        transform: scale(0);
+    }
+    to{
+        transform: translateY(0px);
+        transform: scale(1);
     }
 }
 
